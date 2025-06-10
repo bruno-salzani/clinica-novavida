@@ -5,6 +5,10 @@
 ### Descrição
 Este projeto apresenta a estrutura e os serviços oferecidos pela **Clínica Nova Vida**, uma instituição especializada no tratamento masculino de alcoolismo, dependência química e depressão. O tratamento é realizado por uma equipe multidisciplinar com foco na transformação comportamental, essencial para a recuperação duradoura do paciente.
 
+### Demonstração
+Para acessar a demonstração do projeto <a href="https://clinica-novavida.netlify.app/" target="_blank">Clique aqui</a>
+
+
 ## Tratamento
 
 ### Estrutura do Tratamento
