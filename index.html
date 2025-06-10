@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Configurações básicas -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Título da página -->
+    <title>Clínica Nova Vida - Tratamento de Dependência Química em Limeira - SP</title>
+
+    <!-- Descrição otimizada -->
+    <meta name="description" content="Clínica Nova Vida: tratamento humanizado para dependência química e álcool. Equipe especializada, atendimento completo e acolhimento familiar em Limeira/SP.">
+
+    <!-- Palavras-chave (opcional, mas pode ajudar) -->
+    <meta name="keywords" content="Clínica de reabilitação, tratamento de dependência química, internação voluntária, tratamento contra drogas, Limeira, Clínica Nova Vida, alcoolismo">
+
+    <!-- Canonical (importante para evitar duplicações) -->
+    <link rel="canonical" href="https://www.novavidalimeira.med.br" />
+
+    <!-- Dados estruturados para organização (Schema.org) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "MedicalClinic",
+      "name": "Clínica Nova Vida",
+      "description": "Clínica especializada em reabilitação e tratamento de dependência química com abordagem multidisciplinar.",
+      "url": "https://www.novavidalimeira.med.br",
+      "logo": "https://www.novavidalimeira.med.br/src/assets/img/foto-logotipo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Via Martim Lutéro, Km 03, Bairro dos Pires",
+        "addressLocality": "Limeira",
+        "addressRegion": "SP",
+        "postalCode": "13480-000",
+        "addressCountry": "BR"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+55-19-99633-7576",
+        "contactType": "customer service",
+        "availableLanguage": ["Portuguese"]
+      },
+      "openingHours": "Mo-Su 08:00-18:00"
+    }
+    </script>
+
+    <!-- Favicons (se tiver) -->
+    <link rel="icon" href="src/assets/img/favicon.png" />
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="src/assets/css/bootstrap/bootstrap.css" />
+    <link rel="stylesheet" href="src/assets/css/fontawesome/all.css" />
+    <link rel="stylesheet" href="src/css/timeline.css" />
+    <link rel="stylesheet" href="src/css/carousel.css" />
+    <link rel="stylesheet" href="src/css/style.css" />
+
+    <!-- Scripts -->
+    <script src="src/assets/js/jquery-3.4.1.min.js"></script>
+    <script src="src/assets/js/bootstrap/bootstrap.js"></script>
+  </head>
+  <!-- Modal de Imagem Expandida -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true" style="z-index: 1060;">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img src="" id="modalImage" class="img-fluid w-100 rounded" alt="Imagem Expandida">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Script para ativar o modal ao clicar na imagem -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      document.querySelectorAll('.img-fluid.rounded').forEach(function (img) {
+        img.style.cursor = "pointer"; // muda cursor ao passar
+        img.addEventListener("click", function () {
+          const modalImage = document.getElementById('modalImage');
+          modalImage.src = this.src;
+          modalImage.alt = this.alt;
+          const myModal = new bootstrap.Modal(document.getElementById('imageModal'));
+          myModal.show();
+        });
+      });
+    });
+  </script>
+  <body>
+    <header class="header--primary" style="z-index: 1030; position: fixed; top: 0; width: 100%; background-color: white;">
+      <nav
+        class="header__navbar navbar navbar-expand-lg navbar-light"
+      >
+      <img src="src/assets/img/foto-logotipo.png" alt="Logo" class="img-fluid" style="width: 144px; height: auto; margin-right: 10px;">
+
+
+        <button
+          class="header__menu navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span
+            class="navbar-toggler-icon"
+          ></span>
+        </button>
+
+        <div
+          class="header__container collapse navbar-collapse"
+          id="navbarNav"
+        >
+          <ul class="header__list navbar-nav">
+              <li class="header__item nav-item">
+              <a
+                class="header__link nav-link"
+                href="#home"
+                >Inicio</a
+              >
+            </li>
+            <li class="header__item nav-item">
+              <a
+                class="header__link nav-link"
+                href="https://www.na.org.br/os-12-passos/"
+                target="_blank"
+                >Base Terapeutica</a
+              >
+            </li>
+             <li class="header__item nav-item">
+              <a
+                class="header__link nav-link"
+                target="_blank"
+                href="https://wa.me/5519996337576"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page__layout container-fluid">
+      <div
+        class="page__background--home"
+        id="home"
+      ></div>
+      <section class="section--primary" id="about">
+        <h2 class="section__title">Resumo do Tratamento</h2>
+        <div class="section__container--sized container">
+          <p class="paragraph--primary">
+            Contamos com uma equipe multidisciplinar altamente capacitada e comprometida com a recuperação de pessoas que enfrentam a dependência química, atuando com foco na mudança comportamental, pois entendemos que, sem essa transformação, não é possível alcançar a superação do vício, que pode se tornar um problema permanente. Nosso tratamento tem duração de seis meses e é dividido em três etapas de dois meses cada: os dois primeiros meses são dedicados à desintoxicação física e mental, preparando o paciente para o processo de mudança; os dois meses seguintes concentram-se no trabalho terapêutico e psicológico intenso, com foco na reestruturação emocional e comportamental; e, por fim, os dois últimos meses são voltados ao amadurecimento e à preparação para o retorno à convivência social, familiar e profissional. Oferecemos um acompanhamento completo e contínuo com médico disponível duas vezes por semana e em regime de plantão para qualquer eventualidade, psicólogas com atendimentos às quartas, quintas e sábados, terapeuta presente diariamente, equipe de enfermagem 24 horas por dia, nutricionista responsável por todo o planejamento alimentar, além de uma equipe de cozinha composta por um cozinheiro e três auxiliares por turno. Também oferecemos suporte de transporte, mediante consulta da localidade para cálculo do custo e organização do translado, garantindo conforto e segurança durante todo o processo.
+          </p>
+        </div>
+      </section>
+      <section class="section--violence" id="violence">
+        <div class="page__background--violence"></div>
+          <h2 class="section__title--secondary">Rotina da Clínica</h2>
+          <div class="section__container--primary">
+            <div class="timeline">
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Clínico Geral</h2>
+                  <p class="timeline__paragraph">
+                    Atendimento presencial realizado duas vezes por semana, com médico especializado em dependência química, oferecendo acompanhamento contínuo e individualizado.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Psicóloga</h2>
+                  <p class="timeline__paragraph">
+                    Sessões realizadas às segundas, quartas, quintas e sextas-feiras, das 8h30 às 16h00, focadas no suporte emocional e no desenvolvimento psicológico do paciente.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Terapeutas</h2>
+                  <p class="timeline__paragraph">
+                    Equipe especializada em diversas abordagens terapêuticas, incluindo os 12 Passos (Narcóticos Anônimos), TRE (Terapia Racional Emotiva), PPR (Prevenção à Recaída) e TCC (Terapia Cognitivo-Comportamental).
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Coordenadores</h2>
+                  <p class="timeline__paragraph">
+                    Profissionais responsáveis pela organização geral da clínica, disponíveis 24 horas por dia para garantir o bom funcionamento das atividades e o bem-estar dos pacientes.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Conselheiros</h2>
+                  <p class="timeline__paragraph">
+                    Conselheiros experientes atuam 24 horas por dia, prestando suporte contínuo, motivacional e comportamental aos pacientes.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Serviço de Enfermagem</h2>
+                  <p class="timeline__paragraph">
+                    Enfermagem disponível em tempo integral, garantindo cuidados médicos básicos e suporte imediato em qualquer necessidade de saúde.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Espiritualidade</h2>
+                  <p class="timeline__paragraph">
+                    Atividades espirituais realizadas duas vezes ao dia, todos os dias da semana, promovendo equilíbrio interior e fortalecimento da fé.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Refeições Diárias</h2>
+                  <p class="timeline__paragraph">
+                    Cardápio completo com quatro refeições balanceadas diariamente: café da manhã, almoço, café da tarde e jantar, elaboradas por nutricionista.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Lavanderia</h2>
+                  <p class="timeline__paragraph">
+                    Serviço de lavanderia disponível todos os dias da semana, garantindo higiene e conforto pessoal aos residentes.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Quartos</h2>
+                  <p class="timeline__paragraph">
+                    Estrutura com quartos do tipo suíte e quartos equipados com televisão, oferecendo privacidade e comodidade durante todo o tratamento.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container left">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Lazer e Esporte</h2>
+                  <p class="timeline__paragraph">
+                    Áreas de lazer disponíveis para atividades físicas e recreativas, incluindo piscina, campo de futebol de areia, academia e lago para pesca.
+                  </p>
+                </div>
+              </div>
+              <div class="timeline__container right">
+                <div class="timeline__content">
+                  <h2 class="timeline__title">Cozinha e Nutrição</h2>
+                  <p class="timeline__paragraph">
+                    Cozinha equipada com equipe completa — incluindo nutricionista, cozinheiro e auxiliares — garantindo refeições saudáveis, saborosas e adaptadas às necessidades dos pacientes.
+                  </p>
+                </div>
+              </div>
+            </div>
+      </section>
+      <section class="section--primary" id="complaint">
+        <h2 class="section__title">
+          Investimento
+        </h2>
+        <div class="section__container--sized container">
+          <p class="paragraph--primary">
+            O valor total do tratamento será combinado previamente, conforme as particularidades e necessidades de cada paciente. O investimento inclui acomodações confortáveis, compostas por beliches, armários individuais e banheiro privativo, proporcionando um ambiente seguro e estruturado para o processo de recuperação.
+            Caso haja necessidade de transporte para remoção do paciente até a unidade, disponibilizamos um serviço especializado, realizado por uma equipe composta por quatro profissionais treinados, sendo um motorista e três socorristas. Todos são capacitados em técnicas de imobilização e condução defensiva, garantindo segurança e tranquilidade durante todo o trajeto. O custo desse serviço de transporte será acordado entre as partes, levando em consideração a localidade e a logística envolvida.
+          </p>
+        </div>
+        <div class="container section__container--sized">
+          <div class="row">
+            <!-- Imagem 1 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/1.jpg" alt="Descrição da Imagem 1" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 2 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/2.jpg" alt="Descrição da Imagem 2" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 3 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/3.jpg" alt="Descrição da Imagem 3" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 4 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/4.jpg" alt="Descrição da Imagem 4" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 5 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/5.jpg" alt="Descrição da Imagem 5" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 6 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/6.jpg" alt="Descrição da Imagem 6" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 7 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/7.jpg" alt="Descrição da Imagem 7" class="img-fluid rounded">
+            </div>
+            <!-- Imagem 8 -->
+            <div class="col-md-3 col-sm-6 mb-4">
+              <img src="src/assets/img/8.jpg" alt="Descrição da Imagem 8" class="img-fluid rounded">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--necessary" id="violence">
+        <h2 class="section__title--secondary">Informações para Admissão do Paciente</h2>
+        <div class="section__container--primary">
+          <div class="timeline">
+            <div class="timeline__container left">
+              <div class="timeline__content">
+                <h2 class="timeline__title">DOCUMENTOS</h2>
+                <p class="timeline__paragraph">
+                  Documentos tanto do paciente quanto do responsável solidário RG e CPF ou CNH, Cartão do SUS, Comprovante de residência. 
+                </p>
+              </div>
+            </div>
+            <div class="timeline__container right">
+              <div class="timeline__content">
+                <h2 class="timeline__title">Enxoval</h2>
+                <p class="timeline__paragraph">
+                Cinco cuecas, três pares de meias, cinco bermudas, duas calças, duas blusas de frio, um par de chinelos.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__container left">
+              <div class="timeline__content">
+                <h2 class="timeline__title">Roupa de cama</h2>
+                <p class="timeline__paragraph">
+                  Dois lençóis com virol de elástico, um travesseiro, dois cobertores.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__container right">
+              <div class="timeline__content">
+                <h2 class="timeline__title">Itens higiene pessoal</h2>
+                <p class="timeline__paragraph">
+                  Escova e pasta de dentes, shampoo, sabonete, saboneteira, creme para o corpo (opcional), repelente.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__container left">
+              <div class="timeline__content">
+                <h2 class="timeline__title">Lavanderia</h2>
+                <p class="timeline__paragraph">
+                  A entrega dos seguintes itens deve ser feita no ato da admissão: 2 sabões em pó, 2 amaciantes, 1 água sanitária.
+                </p>
+              </div>
+            </div>
+            <div class="timeline__container right">
+              <div class="timeline__content">
+                <h2 class="timeline__title">Opcional</h2>
+                <p class="timeline__paragraph">
+                Ventilador, modelo à escolha.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section style="padding-top:50px; padding-bottom:20px;" class="section--primary" id="complaint">
+        <div class="row">
+          <div class="col-md-4 col-sm-6">
+            <h4>Clínica Nova Vida</h4>
+            <p class="small px-4">Acolher, informar, orientar e apoiar as famílias dos residentes, integrando-as em todo processo.</p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <h4>Tratamento Masculino</h4>
+            <p class="small px-4">Alcolismo, Dependência Química, Depressão</p>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <h4>Endereço</h4>
+            <a 
+              class="small px-4 d-block" 
+              target="_blank" 
+              href="https://www.google.com/maps/dir//Via+Martinho+Lutero,+Km+3+-+Bairro+dos+Pires,+Limeira+-+SP,+13480-000/@-22.5678016,-47.3416174,19z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94c886fb2f4bb41b:0xaf2373ef8b51bcb8!2m2!1d-47.340746!2d-22.568001?entry=ttu&g_ep=EgoyMDI1MDYwMi4wIKXMDSoASAFQAw%3D%3D">
+              Via Martim Lutéro, Km 03, Bairro dos Pires, Limeira - SP
+            </a>
+            <a 
+              class="small px-4 d-block mt-2" 
+              target="_blank" 
+              href="https://wa.me/5519996337576">
+              (19) 99633-7576
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
