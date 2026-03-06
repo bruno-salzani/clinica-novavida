@@ -1,91 +1,153 @@
-# Clínica Nova Vida
+# 🏥 Clínica Nova Vida - Website Institucional
+![Status](https://img.shields.io/badge/Status-Ativo-brightgreen)
+![Stack](https://img.shields.io/badge/Stack-HTML%20%7C%20CSS%20%7C%20JS-blue)
+![Deploy](https://img.shields.io/badge/Deploy-Netlify-orange)
+![Responsive](https://img.shields.io/badge/Layout-Responsivo-blueviolet)
 
-## Projeto
+Website institucional desenvolvido para a **Clínica Nova Vida**, especializada no tratamento e reabilitação de dependência química e alcoolismo em Limeira - SP. O projeto visa apresentar a metodologia de tratamento, a equipe multidisciplinar e facilitar o contato com pacientes e familiares.
 
-### Descrição
-Este projeto apresenta a estrutura e os serviços oferecidos pela **Clínica Nova Vida**, uma instituição especializada no tratamento masculino de alcoolismo, dependência química e depressão. O tratamento é realizado por uma equipe multidisciplinar com foco na transformação comportamental, essencial para a recuperação duradoura do paciente.
+---
 
-### Demonstração
-Para acessar a demonstração do projeto <a href="https://clinica-novavida.netlify.app/" target="_blank">Clique aqui</a>
+# 🎯 Objetivo do Projeto
 
+Garantir a presença digital da clínica e fornecer informações essenciais:
+- **Apresentação Institucional:** História, missão e valores.
+- **Detalhes do Tratamento:** Fases, duração e metodologia (12 passos, TCC, etc.).
+- **Estrutura e Equipe:** Apresentação da equipe técnica e instalações físicas.
+- **Informações Práticas:** Lista de enxoval, documentos necessários e contato.
+- **Acessibilidade:** Design responsivo e navegação intuitiva.
 
-## Tratamento
+Foco em:
+- **Clareza e Acolhimento:** Design limpo e informações diretas.
+- **Performance:** Carregamento rápido e otimização de recursos.
+- **SEO:** Estruturação semântica e meta tags (Schema.org).
 
-### Estrutura do Tratamento
-O tratamento tem duração de **6 meses**, dividido em 3 fases de 2 meses:
+---
 
-- **Fase 1:** Desintoxicação física e mental
-- **Fase 2:** Terapia intensiva e reestruturação emocional
-- **Fase 3:** Preparação para reintegração social, familiar e profissional
+# 🧠 Estratégia e Arquitetura
 
-Durante todas as fases, o paciente conta com acompanhamento médico, psicológico, terapêutico e suporte nutricional.
+O projeto foi construído como um site estático (Single Page Application conceitual) para garantir alta performance e facilidade de hospedagem.
 
-## Serviços Oferecidos
+Camadas principais:
+1.  **Estrutura (HTML5):** Semântica e acessibilidade.
+2.  **Estilo (CSS3 + Bootstrap):** Layout responsivo, grid system e customizações visuais (`src/css`).
+3.  **Interatividade (JavaScript + jQuery):** Manipulação de DOM, modais e carrosséis.
+4.  **Assets:** Otimização de imagens e ícones (FontAwesome).
+5.  **SEO:** Meta tags configuradas para redes sociais e buscadores.
 
-### Equipe Técnica
-- **Médico Clínico Geral:** 2x por semana e plantão
-- **Psicólogas:** Sessões semanais (seg, qua, qui e sex)
-- **Terapeutas:** 12 Passos, TRE, PPR e TCC
-- **Coordenadores:** 24h por dia
-- **Conselheiros:** Apoio 24h
-- **Enfermagem:** 24h por dia
-- **Nutricionista:** Planejamento alimentar completo
+Diretrizes técnicas:
+- Mobile-First Design.
+- Uso de classes utilitárias do Bootstrap.
+- Ícones vetoriais para nitidez em qualquer resolução.
 
-### Estrutura Física
-- **Quartos:** Suítes com TV
-- **Refeições:** 4 por dia (café da manhã, almoço, café da tarde e jantar)
-- **Lavanderia:** Funcionamento diário
-- **Lazer e Esporte:** Piscina, campo de futebol de areia, academia e lago para pesca
-- **Espiritualidade:** Atividades 2x ao dia, todos os dias
+---
 
-## Investimento
+# 🔄 Seções e Fluxos
 
-O valor do tratamento é acordado conforme o caso. O investimento inclui:
+1.  **Home / Início**
+    - Banner principal e apresentação rápida.
+2.  **Sobre / Resumo**
+    - Explicação do tratamento (6 meses, 3 fases).
+    - Metodologia multidisciplinar.
+3.  **Rotina e Equipe**
+    - Timeline interativa com as atividades diárias.
+    - Descrição das funções (Médico, Psicóloga, Terapeutas).
+4.  **Galeria**
+    - Visualização da estrutura física (Quartos, Lazer, Refeitório).
+5.  **Contato e Localização**
+    - Endereço, telefones e links para WhatsApp.
 
-- Acomodação confortável com beliches, armários individuais e banheiro privativo
-- Alimentação e estrutura completa
-- Atendimento médico e terapêutico
+---
 
-### Transporte
-Serviço de remoção opcional, com equipe especializada composta por motorista e 3 socorristas treinados. O valor é calculado conforme a localidade.
+# 📁 Estrutura do Projeto
 
-## Admissão do Paciente
+```
+/
+├── index.html              # Página principal (Single Page)
+├── README.md               # Documentação do projeto
+├── src/
+│   ├── assets/             # Recursos estáticos de terceiros
+│   │   ├── css/            # Bootstrap, FontAwesome
+│   │   ├── js/             # jQuery, Bootstrap JS
+│   │   ├── img/            # Imagens do layout e galeria
+│   │   └── fonts/          # Fontes personalizadas
+│   └── css/                # Estilos personalizados
+│       ├── style.css       # Estilos gerais
+│       ├── timeline.css    # Estilo da linha do tempo
+│       └── carousel.css    # Estilo do carrossel
+```
 
-### Documentos
-- RG e CPF ou CNH (paciente e responsável)
-- Cartão do SUS
-- Comprovante de residência
+Arquivos de destaque:
+- [index.html](file:///d:/Projects/clinica-novavida/index.html)
+- [src/css/style.css](file:///d:/Projects/clinica-novavida/src/css/style.css)
+- [src/css/timeline.css](file:///d:/Projects/clinica-novavida/src/css/timeline.css)
 
-### Enxoval
-- 5 cuecas
-- 3 pares de meias
-- 5 bermudas
-- 2 calças
-- 2 blusas de frio
-- 1 chinelo
+---
 
-### Roupa de Cama
-- 2 lençóis com elástico
-- 1 travesseiro
-- 2 cobertores
+# ⚙️ Funcionalidades
 
-### Itens de Higiene
-- Escova e pasta de dente
-- Shampoo
-- Sabonete + saboneteira
-- Creme corporal (opcional)
-- Repelente
+## Interface do Usuário
+- **Menu Responsivo:** Colapsável em dispositivos móveis.
+- **Modal de Imagens:** Visualização expandida ao clicar nas fotos da galeria.
+- **Timeline Vertical:** Apresentação visual da rotina da clínica.
 
-### Lavanderia
-- 2 sabões em pó
-- 2 amaciantes
-- 1 água sanitária
+## Integrações
+- **Schema.org:** Dados estruturados para "MedicalClinic".
+- **Open Graph:** Cards ricos para compartilhamento em redes sociais.
+- **Botão WhatsApp:** Link direto para contato rápido.
 
-### Opcional
-- Ventilador (modelo livre)
+---
 
-## Contato
+# 🧪 Boas Práticas
 
-**Clínica Nova Vida**  
-📍 Via Martim Lutéro, Km 03, Bairro dos Pires, Limeira - SP  
-📞 (19) 996xx-xxxx  
+- **Semântica HTML:** Uso correto de tags (`header`, `main`, `section`, `nav`).
+- **Organização de CSS:** Separação de estilos por componentes (timeline, carousel).
+- **Assets Locais:** Dependências (Bootstrap, jQuery) incluídas no projeto para garantir disponibilidade offline/local.
+- **Acessibilidade:** Textos alternativos (`alt`) em imagens.
+
+---
+
+# ℹ️ Informações do Tratamento (Negócio)
+
+### 📅 Fases (6 Meses)
+1.  **Desintoxicação (0-2 meses):** Limpeza física e mental.
+2.  **Conscientização (2-4 meses):** Terapia intensiva e reestruturação.
+3.  **Ressocialização (4-6 meses):** Preparação para o retorno social.
+
+### 📋 Admissão (Checklist)
+- **Documentos:** RG, CPF/CNH, Cartão SUS, Comprovante de Residência.
+- **Enxoval:** Roupas confortáveis (ver lista completa no contrato), itens de higiene pessoal, roupa de cama.
+
+---
+
+# 🛠️ Tecnologias
+
+- **HTML5** (Estrutura)
+- **CSS3** (Estilo)
+- **Bootstrap 4** (Framework CSS)
+- **JavaScript / jQuery** (Interatividade)
+- **FontAwesome** (Ícones)
+- **Netlify** (Hospedagem)
+
+---
+
+# ▶️ Como Executar
+
+1) **Clonar o repositório**
+```bash
+git clone https://github.com/seu-usuario/clinica-novavida.git
+```
+
+2) **Abrir o projeto**
+Basta abrir o arquivo `index.html` em qualquer navegador moderno.
+
+3) **Ambiente de Desenvolvimento (Opcional)**
+Para editar e ver alterações em tempo real, recomenda-se usar o **Live Server** (extensão do VS Code).
+
+---
+
+# 🤝 Conclusão
+
+Este projeto cumpre o papel fundamental de ser a porta de entrada digital para a Clínica Nova Vida, combinando informações técnicas precisas com um design acolhedor para auxiliar famílias e pacientes no momento da busca por tratamento.
+
+**Link de Demonstração:** [https://clinica-novavida.netlify.app/](https://clinica-novavida.netlify.app/)
