@@ -77,11 +77,6 @@ Diretrizes técnicas:
 │       └── carousel.css    # Estilo do carrossel
 ```
 
-Arquivos de destaque:
-- [index.html](file:///d:/Projects/clinica-novavida/index.html)
-- [src/css/style.css](file:///d:/Projects/clinica-novavida/src/css/style.css)
-- [src/css/timeline.css](file:///d:/Projects/clinica-novavida/src/css/timeline.css)
-
 ---
 
 # ⚙️ Funcionalidades
