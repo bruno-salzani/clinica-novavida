@@ -1,0 +1,147 @@
+---
+interface TimelineItem {
+  id: string;
+  title: string;
+  description: string;
+  side: 'left' | 'right';
+  icon?: string;
+}
+
+const ROUTINE_DATA: TimelineItem[] = [
+  {
+    id: 'clinico',
+    title: 'Clínico Geral',
+    description:
+      'Atendimento presencial realizado duas vezes por semana, com médico especializado em dependência química, oferecendo acompanhamento contínuo e individualizado.',
+    side: 'left',
+    icon: '🩺',
+  },
+  {
+    id: 'psico',
+    title: 'Psicóloga',
+    description:
+      'Sessões realizadas às segundas, quartas, quintas e sextas-feiras, das 8h30 às 16h00, focadas no suporte emocional e no desenvolvimento psicológico do paciente.',
+    side: 'right',
+    icon: '🧠',
+  },
+  {
+    id: 'terapeutas',
+    title: 'Terapeutas',
+    description:
+      'Equipe especializada em diversas abordagens terapêuticas, incluindo os 12 Passos (Narcóticos Anônimos), TRE (Terapia Racional Emotiva), PPR (Prevenção à Recaída) e TCC (Terapia Cognitivo-Comportamental).',
+    side: 'left',
+    icon: '🗣️',
+  },
+  {
+    id: 'coordenadores',
+    title: 'Coordenadores',
+    description:
+      'Profissionais responsáveis pela organização geral da clínica, disponíveis 24 horas por dia para garantir o bom funcionamento das atividades e o bem-estar dos pacientes.',
+    side: 'right',
+    icon: '👔',
+  },
+  {
+    id: 'conselheiros',
+    title: 'Conselheiros',
+    description:
+      'Conselheiros experientes atuam 24 horas por dia, prestando suporte contínuo, motivacional e comportamental aos pacientes.',
+    side: 'left',
+    icon: '👥',
+  },
+  {
+    id: 'enfermagem',
+    title: 'Serviço de Enfermagem',
+    description:
+      'Enfermagem disponível em tempo integral, garantindo cuidados médicos básicos e suporte imediato em qualquer necessidade de saúde.',
+    side: 'right',
+    icon: '💉',
+  },
+  {
+    id: 'espiritualidade',
+    title: 'Espiritualidade',
+    description:
+      'Atividades espirituais realizadas duas vezes ao dia, todos os dias da semana, promovendo equilíbrio interior e fortalecimento da fé.',
+    side: 'left',
+    icon: '🙏',
+  },
+  {
+    id: 'refeicoes',
+    title: 'Refeições Diárias',
+    description:
+      'Cardápio completo com quatro refeições balanceadas diariamente: café da manhã, almoço, café da tarde e jantar, elaboradas por nutricionista.',
+    side: 'right',
+    icon: '🍽️',
+  },
+  {
+    id: 'lavanderia',
+    title: 'Lavanderia',
+    description:
+      'Serviço de lavanderia disponível todos os dias da semana, garantindo higiene e conforto pessoal aos residentes.',
+    side: 'left',
+    icon: '🧺',
+  },
+  {
+    id: 'quartos',
+    title: 'Quartos',
+    description:
+      'Estrutura com quartos do tipo suíte e quartos equipados com televisão, oferecendo privacidade e comodidade durante todo o tratamento.',
+    side: 'right',
+    icon: '🛏️',
+  },
+  {
+    id: 'lazer',
+    title: 'Lazer e Esporte',
+    description:
+      'Áreas de lazer disponíveis para atividades físicas e recreativas, incluindo piscina, campo de futebol de areia, academia e lago para pesca.',
+    side: 'left',
+    icon: '⚽',
+  },
+  {
+    id: 'cozinha',
+    title: 'Cozinha e Nutrição',
+    description:
+      'Cozinha equipada com equipe completa — incluindo nutricionista, cozinheiro e auxiliares — garantindo refeições saudáveis, saborosas e adaptadas às necessidades dos pacientes.',
+    side: 'right',
+    icon: '👨‍🍳',
+  },
+];
+---
+
+<section id="routine" class="py-20 bg-gray-900 text-white relative overflow-hidden">
+  <div
+    class="absolute inset-0 bg-cover bg-center opacity-20"
+    style="background-image: url('/assets/img/bg_2.jpg');"
+  >
+  </div>
+
+  <div class="container mx-auto px-6 relative z-10">
+    <h2 class="text-3xl font-heading font-bold text-center mb-16 uppercase tracking-wide">
+      Rotina da Clínica
+    </h2>
+
+    <div class="relative wrap overflow-hidden p-4 h-full">
+      <div class="border-2-2 absolute border-opacity-20 border-gray-700 h-full border left-1/2"></div>
+
+      {
+        ROUTINE_DATA.map((item) => (
+          <div
+            class={`mb-8 flex justify-between items-center w-full ${item.side === 'right' ? 'flex-row-reverse left-timeline' : 'right-timeline'}`}
+          >
+            <div class="order-1 w-5/12" />
+
+            <div class="z-20 flex items-center order-1 bg-primary shadow-xl w-10 h-10 rounded-full border-4 border-gray-800 text-lg justify-center">
+              <span>{item.icon}</span>
+            </div>
+
+            <div class="order-1 bg-gray-800 rounded-lg shadow-xl w-5/12 px-6 py-4 hover:scale-105 transition-transform duration-300 border border-gray-700">
+              <h3 class="font-bold text-white text-xl mb-2">{item.title}</h3>
+              <p class="text-sm leading-snug tracking-wide text-gray-300 text-opacity-100 text-justify">
+                {item.description}
+              </p>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

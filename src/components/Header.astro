@@ -1,0 +1,44 @@
+---
+import { Image } from 'astro:assets';
+import logo from '../assets/img/foto-logotipo.png';
+
+const links = [
+  { href: '#home', label: 'Início' },
+  { href: 'https://www.na.org.br/os-12-passos/', label: 'Base Terapêutica', external: true },
+  { href: 'https://wa.me/5519996337576', label: 'Contato', external: true },
+];
+---
+
+<header class="fixed top-0 w-full z-50 bg-white shadow-md">
+  <nav class="container mx-auto px-6 py-3 flex justify-between items-center">
+    <a href="#" class="flex items-center">
+      <Image src={logo} alt="Clínica Nova Vida" class="h-16 w-auto" width={144} height={60} />
+    </a>
+
+    <div class="hidden md:flex space-x-8">
+      {
+        links.map((link) => (
+          <a
+            href={link.href}
+            class="text-gray-800 hover:text-primary font-medium uppercase text-sm tracking-wider transition-colors"
+            target={link.external ? '_blank' : '_self'}
+            rel={link.external ? 'noopener noreferrer' : ''}
+          >
+            {link.label}
+          </a>
+        ))
+      }
+    </div>
+
+    <!-- Mobile Menu Button (simplified) -->
+    <button class="md:hidden text-gray-800 focus:outline-none" aria-label="Menu">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M4 6h16M4 12h16M4 18h16"></path>
+      </svg>
+    </button>
+  </nav>
+</header>

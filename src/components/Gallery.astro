@@ -1,0 +1,56 @@
+---
+import { Image } from 'astro:assets';
+
+// Import images
+import img1 from '../assets/img/1.jpg';
+import img2 from '../assets/img/2.jpg';
+import img3 from '../assets/img/3.jpg';
+import img4 from '../assets/img/4.jpg';
+import img5 from '../assets/img/5.jpg';
+import img6 from '../assets/img/6.jpg';
+import img7 from '../assets/img/7.jpg';
+import img8 from '../assets/img/8.jpg';
+
+const images = [
+  { src: img1, alt: 'Instalações - Foto 1' },
+  { src: img2, alt: 'Instalações - Foto 2' },
+  { src: img3, alt: 'Instalações - Foto 3' },
+  { src: img4, alt: 'Instalações - Foto 4' },
+  { src: img5, alt: 'Instalações - Foto 5' },
+  { src: img6, alt: 'Instalações - Foto 6' },
+  { src: img7, alt: 'Instalações - Foto 7' },
+  { src: img8, alt: 'Instalações - Foto 8' },
+];
+---
+
+<section id="gallery" class="py-16 bg-white">
+  <div class="container mx-auto px-6">
+    <h2
+      class="text-3xl font-heading font-bold text-center text-primary mb-12 uppercase tracking-wide"
+    >
+      Nossas Instalações
+    </h2>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      {
+        images.map((image) => (
+          <div class="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg aspect-square">
+            <Image
+              src={image.src}
+              alt={image.alt}
+              class="object-cover w-full h-full transform transition-transform duration-500 group-hover:scale-110"
+              width={400}
+              height={400}
+              format="webp"
+            />
+            <div class="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-30 transition-opacity duration-300 flex items-center justify-center">
+              <span class="text-white opacity-0 group-hover:opacity-100 font-bold text-lg drop-shadow-md">
+                Ver Foto
+              </span>
+            </div>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>
